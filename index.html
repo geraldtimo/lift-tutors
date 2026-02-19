@@ -1,1 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+  <!-- ═══ GOOGLE SEARCH CONSOLE VERIFICATION ═══ -->
+  <meta name="google-site-verification" content="TMGPQi-GzPozr-HcyPWHrpFEEaBBZAQ7FYK0IaLkQrk" />
+
+  <!-- ═══ PRIMARY SEO ═══ -->
+  <title>LIFT TUTORS – Expert Tutoring in Kampala, Uganda | Cambridge, Edexcel, ACE & Local Curriculum</title>
+  <meta name="description" content="LIFT TUTORS offers professional one-on-one, group and online tutoring in Kampala, Uganda for Pre-Primary, Primary, K-12 and Adults. Cambridge British, Pearson Edexcel, ACE and Uganda Local Curriculum. Exam prep, holiday programmes and standard examinations available." />
+  <meta name="keywords" content="tutors in Kampala, tutoring Uganda, Cambridge tutoring Uganda, Edexcel tutors Kampala, ACE curriculum Uganda, K-12 tutoring Uganda, online tutoring Uganda, primary school tutors Kampala, exam preparation Uganda, holiday tuition Uganda, PBL tutoring, LIFT TUTORS, best tutors Uganda, home tutors Kampala" />
+  <meta name="author" content="LIFT TUTORS" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://geraldtimo.github.io/lift-tutors/" />
+
+  <!-- ═══ OPEN GRAPH (Facebook, WhatsApp previews) ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LIFT TUTORS – Expert Tutoring in Kampala, Uganda" />
+  <meta property="og:description" content="Professional tutoring for all ages and curricula — Cambridge, Edexcel, ACE & Uganda Local. One-on-one, group & online sessions. Enroll today!" />
+  <meta property="og:url" content="https://geraldtimo.github.io/lift-tutors/" />
+  <meta property="og:site_name" content="LIFT TUTORS" />
+  <meta property="og:locale" content="en_UG" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LIFT TUTORS – Expert Tutoring in Kampala, Uganda" />
+  <meta name="twitter:description" content="Professional tutoring for Pre-Primary to Adults. Cambridge, Edexcel, ACE & Uganda Local Curriculum. Enroll today!" />
+
+  <!-- ═══ GEO / LOCAL SEO ═══ -->
+  <meta name="geo.region" content="UG-C" />
+  <meta name="geo.placename" content="Kampala, Uganda" />
+  <meta name="geo.position" content="0.3476;32.5825" />
+  <meta name="ICBM" content="0.3476, 32.5825" />
+
+  <!-- ═══ STRUCTURED DATA (Google Rich Results) ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "LIFT TUTORS",
+    "url": "https://geraldtimo.github.io/lift-tutors/",
+    "description": "Expert tutoring service in Kampala, Uganda offering one-on-one, group and online tutoring for Pre-Primary, Primary, K-12 and Adults across Cambridge British, Pearson Edexcel, ACE and Uganda Local Curriculum.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kampala",
+      "addressCountry": "UG"
+    },
+    "telephone": "+256700000000",
+    "email": "hello@lifttutors.ug",
+    "areaServed": "Uganda",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tutoring Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-on-One Tutoring" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Online Tutoring" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Group Tutoring" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exam Preparation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Holiday & Homework Support" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Standard Examinations" } }
+      ]
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --yellow: #FFD93D;
+      --coral: #FF6B6B;
+      --teal: #4ECDC4;
+      --purple: #A855F7;
+      --blue: #3B82F6;
+      --green: #22C55E;
+      --dark: #1a1a2e;
+      --white: #FFFFFF;
+      --light: #F9F7FF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 5%;
+      background: var(--dark);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      font-family: 'Boogaloo', cursive;
+      font-size: 2rem;
+      color: var(--yellow);
+      letter-spacing: 2px;
+    }
+
+    .logo span { color: var(--teal); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul a {
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul a:hover { color: var(--yellow); }
+
+    .nav-cta {
+      background: var(--coral);
+      color: white !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      transition: transform 0.2s, background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--yellow) !important; color: var(--dark) !important; transform: scale(1.05); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 5% 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-blobs {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.25;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .blob1 { width: 500px; height: 500px; background: var(--coral); top: -150px; left: -100px; animation-delay: 0s; }
+    .blob2 { width: 400px; height: 400px; background: var(--teal); bottom: -100px; right: -80px; animation-delay: 2s; }
+    .blob3 { width: 300px; height: 300px; background: var(--purple); top: 40%; left: 50%; animation-delay: 4s; }
+    .blob4 { width: 250px; height: 250px; background: var(--yellow); bottom: 10%; left: 15%; animation-delay: 1s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-30px) scale(1.05); }
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: 850px; }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 0.4rem 1.2rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      animation: popIn 0.6s ease both;
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.8) translateY(20px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .hero-title {
+      font-family: 'Boogaloo', cursive;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      animation: popIn 0.7s 0.1s ease both;
+    }
+
+    .hero-title .highlight-coral { color: var(--coral); }
+    .hero-title .highlight-teal  { color: var(--teal); }
+
+    .hero-sub {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      color: #aaa;
+      margin: 1.2rem auto 2.5rem;
+      max-width: 600px;
+      line-height: 1.7;
+      animation: popIn 0.7s 0.2s ease both;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: popIn 0.7s 0.3s ease both;
+    }
+
+    .btn {
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+
+    .btn-primary { background: var(--coral); color: white; }
+    .btn-secondary { background: transparent; border: 2px solid var(--teal); color: var(--teal); }
+    .btn-secondary:hover { background: var(--teal); color: var(--dark); }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      background: var(--yellow);
+      padding: 1.5rem 5%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem 4rem;
+    }
+
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Boogaloo', cursive;
+      font-size: 2.2rem;
+      color: var(--dark);
+    }
+    .stat-label { font-size: 0.85rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* ── SECTION SHARED ── */
+    section { padding: 6rem 5%; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Boogaloo', cursive;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .about-card {
+      border-radius: 20px;
+      padding: 1.5rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      animation: popIn 0.5s ease both;
+    }
+
+    .ac1 { background: var(--coral); color: white; border-radius: 20px 20px 4px 20px; }
+    .ac2 { background: var(--teal); color: var(--dark); border-radius: 20px 20px 20px 4px; margin-top: 1.5rem; }
+    .ac3 { background: var(--purple); color: white; border-radius: 4px 20px 20px 20px; margin-top: -1rem; }
+    .ac4 { background: var(--yellow); color: var(--dark); border-radius: 20px 4px 20px 20px; }
+
+    .about-card .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+
+    .about-text .section-label { background: #FFF3CD; color: #8a6a00; }
+
+    .curriculum-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .tag {
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .tag-blue   { background: #DBEAFE; color: #1D4ED8; }
+    .tag-green  { background: #DCFCE7; color: #166534; }
+    .tag-purple { background: #F3E8FF; color: #7E22CE; }
+    .tag-coral  { background: #FFE4E4; color: #b91c1c; }
+    .tag-teal   { background: #CCFBF1; color: #0F766E; }
+
+    /* ── SERVICES ── */
+    #services { background: var(--light); }
+
+    .services-header { text-align: center; margin-bottom: 3.5rem; }
+    .services-header .section-label { background: #E0F2FE; color: #0369a1; }
+    .services-header .section-desc { margin: 0 auto; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 2rem;
+      transition: transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+    }
+
+    .sc-coral::before  { background: var(--coral); }
+    .sc-teal::before   { background: var(--teal); }
+    .sc-purple::before { background: var(--purple); }
+    .sc-blue::before   { background: var(--blue); }
+    .sc-green::before  { background: var(--green); }
+    .sc-yellow::before { background: var(--yellow); }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .si-coral  { background: #FFE4E4; }
+    .si-teal   { background: #CCFBF1; }
+    .si-purple { background: #F3E8FF; }
+    .si-blue   { background: #DBEAFE; }
+    .si-green  { background: #DCFCE7; }
+    .si-yellow { background: #FEF9C3; }
+
+    .service-card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 0.6rem;
+      color: var(--dark);
+    }
+
+    .service-card p {
+      font-size: 0.92rem;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    /* ── EXAMS BANNER ── */
+    .exams-banner {
+      background: var(--dark);
+      border-radius: 28px;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .exams-banner::before {
+      content: '📝';
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 8rem;
+      opacity: 0.08;
+    }
+
+    .exams-banner h3 {
+      font-family: 'Boogaloo', cursive;
+      font-size: 2rem;
+      color: var(--yellow);
+      margin-bottom: 0.5rem;
+    }
+
+    .exams-banner p { color: #aaa; max-width: 500px; line-height: 1.7; }
+    .exams-banner .btn-primary { background: var(--yellow); color: var(--dark); flex-shrink: 0; }
+
+    /* ── APPROACH ── */
+    #approach {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    #approach .section-label { background: rgba(78,205,196,0.2); color: var(--teal); }
+    #approach .section-title { color: white; }
+    #approach .section-desc { color: #aaa; margin: 0 auto 3.5rem; }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .approach-step {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.25s, background 0.25s;
+    }
+
+    .approach-step:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.09);
+    }
+
+    .step-num {
+      font-family: 'Boogaloo', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .approach-step h4 { font-size: 1rem; font-weight: 800; margin-bottom: 0.5rem; color: white; }
+    .approach-step p  { font-size: 0.88rem; color: #888; line-height: 1.6; }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--white); }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .contact-info .section-label { background: #FFF0F0; color: #b91c1c; }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .contact-icon.ci-coral  { background: #FFE4E4; }
+    .contact-icon.ci-teal   { background: #CCFBF1; }
+    .contact-icon.ci-purple { background: #F3E8FF; }
+    .contact-icon.ci-green  { background: #DCFCE7; }
+
+    .contact-detail h5 { font-weight: 800; font-size: 0.9rem; color: #888; margin-bottom: 0.2rem; }
+    .contact-detail p  { font-weight: 700; color: var(--dark); }
+
+    .contact-form {
+      background: var(--light);
+      border-radius: 24px;
+      padding: 2.5rem;
+    }
+
+    .contact-form h3 {
+      font-family: 'Boogaloo', cursive;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+
+    .form-group { margin-bottom: 1.2rem; }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-bottom: 0.4rem;
+      color: #444;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.95rem;
+      color: var(--dark);
+      background: white;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--teal);
+    }
+
+    .form-group textarea { height: 110px; resize: none; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .contact-form .btn-primary {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.05rem;
+      border-radius: 14px;
+      margin-top: 0.5rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: #aaa;
+      text-align: center;
+      padding: 2.5rem 5%;
+    }
+
+    .footer-logo {
+      font-family: 'Boogaloo', cursive;
+      font-size: 1.8rem;
+      color: var(--yellow);
+      margin-bottom: 0.5rem;
+    }
+
+    footer p { font-size: 0.88rem; }
+
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    footer .footer-links a {
+      color: #888;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    footer .footer-links a:hover { color: var(--yellow); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-visual { order: -1; }
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .exams-banner { text-align: center; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">LIFT <span>TUTORS</span></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#approach">Our Approach</a></li>
+      <li><a href="https://wa.me/256773048929?text=Hello%20LIFT%20TUTORS!%20I%20would%20like%20to%20get%20started." target="_blank" class="nav-cta">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-blobs">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+      <div class="blob blob4"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🚀 Uganda's Premier Tutoring Service</div>
+      <h1 class="hero-title">
+        We <span class="highlight-coral">LIFT</span><br/>
+        Every <span class="highlight-teal">Learner</span> Higher
+      </h1>
+      <p class="hero-sub">
+        Expert tutoring for Pre-Primary, Primary, K-12 & Adults across Cambridge, Pearson Edexcel, ACE & Uganda Local Curriculum — powered by the Project-Based Learning approach.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/256773048929?text=Hello%20LIFT%20TUTORS!%20I%20would%20like%20to%20enroll%20today." target="_blank" class="btn btn-primary">📚 Enroll Today</a>
+        <a href="#services" class="btn btn-secondary">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Curricula Covered</div></div>
+    <div class="stat"><div class="stat-num">All Stages</div><div class="stat-label">Pre-Primary to Adult</div></div>
+    <div class="stat"><div class="stat-num">PBL</div><div class="stat-label">Teaching Approach</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Learner-Centered</div></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-card ac1"><div class="icon">📖</div>Cambridge British Curriculum Specialists</div>
+        <div class="about-card ac2"><div class="icon">🌟</div>ACE & Pearson Edexcel Certified Tutors</div>
+        <div class="about-card ac3"><div class="icon">🇺🇬</div>Uganda Local Curriculum Experts</div>
+        <div class="about-card ac4"><div class="icon">🧠</div>Project-Based Learning — Learning by Doing!</div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">Education That Truly <em>Elevates</em></h2>
+        <p class="section-desc">
+          At LIFT TUTORS, we believe every learner has unlimited potential — they just need the right guide. We deliver engaging, results-driven tutoring for learners of all ages and stages, from their very first letters to advanced examinations. Our experienced tutors meet learners where they are and take them where they need to go.
+        </p>
+        <p class="section-desc" style="margin-top: 1rem;">
+          We don't just teach — we inspire curiosity, build confidence, and cultivate lifelong love of learning through our Project-Based Learning (PBL) methodology.
+        </p>
+        <div class="curriculum-tags">
+          <span class="tag tag-blue">📘 Cambridge British</span>
+          <span class="tag tag-green">📗 ACE Curriculum</span>
+          <span class="tag tag-purple">📙 Pearson Edexcel</span>
+          <span class="tag tag-coral">🇺🇬 Uganda Local</span>
+          <span class="tag tag-teal">🔬 PBL Approach</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-header">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Services Built for <em>Every</em> Learner</h2>
+      <p class="section-desc">Whether your child is just starting out or preparing for major exams, LIFT TUTORS has the right programme for them.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card sc-coral">
+        <div class="service-icon si-coral">👤</div>
+        <h3>One-on-One Tutoring</h3>
+        <p>Personalized sessions fully tailored to the learner's pace, learning style, and goals. Maximum attention, maximum results.</p>
+      </div>
+
+      <div class="service-card sc-teal">
+        <div class="service-icon si-teal">💻</div>
+        <h3>Online Tutoring</h3>
+        <p>High-quality live virtual sessions from the comfort of home. Access expert tutors from anywhere in Uganda and beyond.</p>
+      </div>
+
+      <div class="service-card sc-purple">
+        <div class="service-icon si-purple">👥</div>
+        <h3>Group Tutoring</h3>
+        <p>Collaborative and affordable group sessions that build teamwork, communication, and shared understanding among peers.</p>
+      </div>
+
+      <div class="service-card sc-blue">
+        <div class="service-icon si-blue">📝</div>
+        <h3>Exam Preparation</h3>
+        <p>Intensive, focused exam prep for all key stages. Past papers, timed practice, revision techniques and confidence-building.</p>
+      </div>
+
+      <div class="service-card sc-green">
+        <div class="service-icon si-green">🏖️</div>
+        <h3>Holiday & Homework Support</h3>
+        <p>Structured holiday programmes and daily homework assistance to keep learners ahead of the curve all year round.</p>
+      </div>
+
+      <div class="service-card sc-yellow">
+        <div class="service-icon si-yellow">🌍</div>
+        <h3>All Subjects Covered</h3>
+        <p>Mathematics, Sciences, Languages, Humanities and more — across Pre-Primary, Primary, Secondary (K-12) and Adult levels.</p>
+      </div>
+
+      <div class="service-card sc-teal">
+        <div class="service-icon si-teal">🎓</div>
+        <h3>CPD for Teachers</h3>
+        <p>Continuing Professional Development workshops and training programmes designed to sharpen teaching skills, boost classroom performance, and keep educators current with best practices.</p>
+      </div>
+
+      <div class="service-card sc-purple">
+        <div class="service-icon si-purple">🧭</div>
+        <h3>Career Guidance for Teenagers</h3>
+        <p>Empowering teens to discover their strengths, explore career pathways, and make confident decisions about their academic and professional future.</p>
+      </div>
+
+      <div class="service-card sc-coral">
+        <div class="service-icon si-coral">📚</div>
+        <h3>Textbook Sales</h3>
+        <p>We stock and sell a wide range of quality textbooks aligned to Cambridge, Pearson Edexcel, ACE, and the Uganda Local Curriculum for all levels.</p>
+      </div>
+
+    </div>
+
+    <!-- EXAMS BANNER -->
+    <div class="exams-banner">
+      <div>
+        <h3>📋 Standard Examinations — Set & Sold</h3>
+        <p>We design and supply high-quality, curriculum-aligned examinations for all key stages. Perfect for schools, parents and learning centres seeking reliable assessment tools.</p>
+      </div>
+      <a href="https://wa.me/256773048929?text=Hello%20LIFT%20TUTORS!%20I%20would%20like%20to%20order%20standard%20examinations." target="_blank" class="btn btn-primary">Order Exams</a>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach">
+    <span class="section-label">Our Methodology</span>
+    <h2 class="section-title">The LIFT Learning Journey</h2>
+    <p class="section-desc">Our Project-Based Learning (PBL) approach transforms passive learners into active thinkers. Here's how we do it:</p>
+
+    <div class="approach-grid">
+      <div class="approach-step">
+        <div class="step-num" style="color: var(--coral);">01</div>
+        <h4>Assess & Understand</h4>
+        <p>We evaluate each learner's current level, learning style, and specific goals before designing a tailored plan.</p>
+      </div>
+      <div class="approach-step">
+        <div class="step-num" style="color: var(--teal);">02</div>
+        <h4>Learn by Doing</h4>
+        <p>PBL puts learners at the centre — real projects, real challenges, real understanding that sticks long-term.</p>
+      </div>
+      <div class="approach-step">
+        <div class="step-num" style="color: var(--purple);">03</div>
+        <h4>Practice & Reinforce</h4>
+        <p>Targeted exercises, past papers, and progressive challenges ensure deep mastery of every concept.</p>
+      </div>
+      <div class="approach-step">
+        <div class="step-num" style="color: var(--yellow);">04</div>
+        <h4>Track & Celebrate</h4>
+        <p>Regular feedback to students and parents keeps everyone aligned, motivated, and celebrating every milestone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Ready to <span style="color:var(--coral)">LIFT</span> Your Learner?</h2>
+        <p class="section-desc">
+          Reach out today and let's find the perfect tutoring programme for your child or yourself. Our team is friendly, responsive and ready to help you get started.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-icon ci-coral">📍</div>
+          <div>
+            <h5>Our Offices</h5>
+            <p>Kisaasi–Kyanja Road, Kampala</p>
+            <p>Seeta–Mukono</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon ci-teal">📞</div>
+          <div>
+            <h5>Call Us</h5>
+            <p>+256 755 194 040</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon ci-green">💬</div>
+          <div>
+            <h5>WhatsApp</h5>
+            <p>+256 773 048 929</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon ci-purple">✉️</div>
+          <div>
+            <h5>Email</h5>
+            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4b8bdb2a094b3b9b5bdb8fab7bbb9">[email&#160;protected]</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form action="https://formspree.io/f/geroburatimo@gmail.com" method="POST" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="e.g. Sarah Namukasa" required />
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp</label>
+            <input type="tel" name="phone" placeholder="+256 7XX XXX XXX" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Service Interested In</label>
+          <select name="service">
+            <option value="">Select a service...</option>
+            <option>One-on-One Tutoring</option>
+            <option>Online Tutoring</option>
+            <option>Group Tutoring</option>
+            <option>Exam Preparation</option>
+            <option>Holiday / Homework Support</option>
+            <option>Standard Examinations</option>
+            <option>CPD for Teachers</option>
+            <option>Career Guidance for Teenagers</option>
+            <option>Textbook Purchase</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Tell us about your learner's level, curriculum, subjects needed, etc."></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="New Enquiry from LIFT TUTORS Website" />
+        <input type="hidden" name="_replyto" value="geroburatimo@gmail.com" />
+        <button type="submit" class="btn btn-primary">🚀 Send Message</button>
+        </form>
+        <div id="formSuccess" style="display:none; margin-top:1rem; background:#DCFCE7; color:#166534; padding:1rem; border-radius:12px; font-weight:700; text-align:center;">
+          ✅ Message sent! We'll get back to you shortly on WhatsApp or Email.
+        </div>
+        <a href="https://wa.me/256773048929?text=Hello%20LIFT%20TUTORS!%20I%20have%20an%20enquiry." target="_blank" class="btn" style="display:block; text-align:center; margin-top:1rem; background:#25D366; color:white; border-radius:14px; padding:0.85rem;">
+          💬 Or Chat Us on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">LIFT TUTORS</div>
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p>© 2025 LIFT TUTORS · 
